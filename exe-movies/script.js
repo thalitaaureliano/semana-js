@@ -1,6 +1,7 @@
 const button = document.querySelector(".btn-search-movie");
 const texto = document.getElementById("movie");
 const containerMovies = document.querySelector('.movies');
+const form = document.querySelector(`.form`);
 
 console.log(texto)
 
@@ -45,6 +46,8 @@ button.addEventListener('click', (evento) =>{
             button.addEventListener('click', () => {
                 box.remove();
             })
+
+            form.reset();
 
         }) 
     })
